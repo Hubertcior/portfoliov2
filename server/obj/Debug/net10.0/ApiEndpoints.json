@@ -1,0 +1,22 @@
+[
+  {
+    "ContainingType": "Server.Constrollers.SkillsController",
+    "Method": "GetBackendSkills",
+    "RelativePath": "api/Skills/backend-skills",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Server.Constrollers.SkillsController",
+    "Method": "GetFrontendSkills",
+    "RelativePath": "api/Skills/frontend-skills",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]
