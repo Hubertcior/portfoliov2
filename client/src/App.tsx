@@ -1,12 +1,10 @@
 import './App.css'
-import { InteractiveApiConsole } from './components/organisms/InteractiveApiConsole'
-import { Profile } from './components/organisms/Profile'
+import { SystemArchitecture } from './components/organisms/SystemArchitecture'
 
 function App() {
   return (
-    <div className='flex flex-row'>
-      <Profile/>
-     <InteractiveApiConsole/>
+    <div className='flex flex-row'> 
+     <SystemArchitecture/>
     </div>
   )
 }
