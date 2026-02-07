@@ -3,6 +3,7 @@ import { ApiStatus } from './components/organisms/ApiStatus'
 import { Bio } from './components/organisms/Bio'
 import { InteractiveApiConsole } from './components/organisms/InteractiveApiConsole'
 import { Profile } from './components/organisms/Profile'
+import { Resume } from './components/organisms/Resume'
 import { SystemArchitecture } from './components/organisms/SystemArchitecture'
 
 function App() {
@@ -13,18 +14,18 @@ function App() {
         
         <div className='flex flex-col gap-10 w-1/3'>
           <Profile/>
+          <Resume/>
           <ApiStatus/>
         </div>
 
         <div className='flex flex-col gap-10 flex-1'>
-          <SystemArchitecture/>
+          <Bio/>
           <InteractiveApiConsole/>
         </div>
 
       </div>
       
       <div className='w-full'>
-        <Bio/>
       </div>
 
     </div>
