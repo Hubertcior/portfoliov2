@@ -31,9 +31,9 @@ export const ApiInfo = () => {
     }
 
     const dynamicApiInfo = [
-        { info: "API VERSION", description: frozenData?.apiVersion }, 
-        { info: "Condition", description: frozenData?.condition },
-        { info: "Last Reported", description: frozenData ? new Date(frozenData.lastReported).toLocaleString() : "" },
+        { info: "API_VERSION", description: frozenData?.apiVersion }, 
+        { info: "CONDITION", description: frozenData?.condition },
+        { info: "LAST_REPORTED", description: frozenData ? new Date(frozenData.lastReported).toLocaleString() : "" },
     ];
 
     return (
