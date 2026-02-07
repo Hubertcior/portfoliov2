@@ -39,11 +39,15 @@ export const ApiInfo = () => {
     return (
         <>
             {dynamicApiInfo.map((item) => (
-                <div key={item.info} className="p-4 bg-[#0b1220] text-green-300 font-mono rounded-lg shadow-inner border-2 border-slate-400 mb-4">
-                    <h3 className="text-lg font-semibold text-green-200">{item.info}</h3>
-                    <p className="text-md">{item.description}</p>
-                </div>
-            ))}
+                <div key={item.info} className="flex flex-row items-start gap-6 p-4 bg-[#0b1220] text-green-300 font-mono rounded-lg shadow-inner border-2 border-slate-400 mb-4">
+                    <h3 className="min-w-[180px] text-lg font-semibold text-green-200">
+                    {item.info}
+                    </h3>
+                <p className="text-md flex-1">
+                    {item.description}
+                </p>
+            </div>
+         ))}
         </>
     );
 }
