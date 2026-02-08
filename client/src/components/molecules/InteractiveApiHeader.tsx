@@ -1,7 +1,7 @@
 import { useState } from "react"
 import type { ApiEndpoint } from "../../types/ApiEnpoint";
-import { ExecuteButton } from "../atoms/ExecuteButton"
-import { RequestSelect } from "../atoms/RequestSelect"
+import { ExecuteButton } from "../atoms/ApiConsoleItems/ExecuteButton"
+import { RequestSelect } from "../atoms/ApiConsoleItems/RequestSelect"
 
 export interface InteractiveApiHeaderProps {
     onExecute: (url: string, method: string) => void;

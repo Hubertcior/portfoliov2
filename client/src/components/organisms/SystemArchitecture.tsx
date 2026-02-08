@@ -1,5 +1,5 @@
-import { Window } from "../molecules/Window"
-import { Content } from "../molecules/Content"
+import { Window } from "../molecules/WindowItems/Window"
+import { Content } from "../molecules/WindowItems/Content"
 import { SystemConnector } from "../molecules/SystemConnector";
 
 export const SystemArchitecture = () => {

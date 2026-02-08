@@ -1,5 +1,5 @@
-import { LongArrow } from "../atoms/LongArrow";
-import { SystemInfo } from "../atoms/SystemInfo"
+import { LongArrow } from "../atoms/SystemInfoItems/LongArrow";
+import { SystemInfo } from "../atoms/SystemInfoItems/SystemInfo"
 
 export const SystemConnector = () => {  
     return (

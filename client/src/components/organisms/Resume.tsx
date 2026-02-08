@@ -1,6 +1,6 @@
-import { DownloadButton } from "../atoms/DownloadButton";
-import { Content } from "../molecules/Content";
-import { Window } from "../molecules/Window";
+import { DownloadButton } from "../atoms/ResumeItems/DownloadButton";
+import { Content } from "../molecules/WindowItems/Content";
+import { Window } from "../molecules/WindowItems/Window";
 
 export const Resume = () => {
     return (

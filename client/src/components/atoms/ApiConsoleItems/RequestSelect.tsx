@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import type { ApiEndpoint } from '../../types/ApiEnpoint';
-import { AVAILABLE_ENDPOINTS } from '../../types/ApiEnpoint';
+import type { ApiEndpoint } from '../../../types/ApiEnpoint';
+import { AVAILABLE_ENDPOINTS } from '../../../types/ApiEnpoint';
 
 interface RequestSelectProps {
   onSelect: (endpoint: ApiEndpoint) => void;
