@@ -1,5 +1,5 @@
-import { WindowBorder } from "../atoms/WindowBorder";
-import { WindowTitle } from "../atoms/WindowTitle";
+import { WindowBorder } from "../../atoms/WindowItem/WindowBorder";
+import { WindowTitle } from "../../atoms/WindowItem/WindowTitle";
 
 export const Window = ({children, title}: {children: React.ReactNode, title: string}) => {
     return (

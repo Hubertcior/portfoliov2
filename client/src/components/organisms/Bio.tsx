@@ -1,9 +1,9 @@
-import { AboutMe } from "../atoms/AboutMe";
-import { BioDecoration } from "../atoms/BioDecoration";
-import { BioSection } from "../molecules/BioSection";
-import { Content } from "../molecules/Content";
-import { PeriodItem } from "../molecules/PeriodItem";
-import { Window } from "../molecules/Window";
+import { AboutMe } from "../atoms/BioItems/AboutMe";
+import { BioDecoration } from "../atoms/BioItems/BioDecoration";
+import { BioSection } from "../molecules/BioItems/BioSection";
+import { Content } from "../molecules/WindowItems/Content";
+import { PeriodItem } from "../molecules/BioItems/PeriodItem";
+import { Window } from "../molecules/WindowItems/Window";
 
 export const Bio = () => {
     return(

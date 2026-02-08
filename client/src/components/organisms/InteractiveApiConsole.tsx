@@ -1,7 +1,7 @@
-import { RequestDisplay } from "../atoms/RequestDisplay";
+import { RequestDisplay } from "../atoms/ApiConsoleItems/RequestDisplay";
 import { InteractiveApiHeader } from "../molecules/InteractiveApiHeader";
-import { Window } from "../molecules/Window";
-import { Content } from "../molecules/Content";
+import { Window } from "../molecules/WindowItems/Window";
+import { Content } from "../molecules/WindowItems/Content";
 import { useApiRequest } from "../../hooks/useApiRequest";
 
 export const InteractiveApiConsole = () => {

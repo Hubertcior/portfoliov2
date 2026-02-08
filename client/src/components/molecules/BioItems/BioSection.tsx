@@ -1,4 +1,4 @@
-import { WindowTitle } from "../atoms/WindowTitle";
+import { WindowTitle } from "../../atoms/WindowItem/WindowTitle";
 
 export const BioSection = ({ title }: { title: string }) => {
 

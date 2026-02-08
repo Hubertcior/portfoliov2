@@ -1,4 +1,5 @@
-import { TextInfo } from "../atoms/TextInfo";
+import { TextInfo } from "../atoms/ProfileItems/TextInfo";
+
 
 const USER_INFO = [
     { info: "NAME", description: "HUBERT"},

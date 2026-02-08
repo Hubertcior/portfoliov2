@@ -1,7 +1,7 @@
-import { UserImage } from "../atoms/UserImage";
-import { Content } from "../molecules/Content"
+import { UserImage } from "../atoms/ProfileItems/UserImage";
+import { Content } from "../molecules/WindowItems/Content"
 import { UserInfo } from "../molecules/UserInfo";
-import { Window } from "../molecules/Window"
+import { Window } from "../molecules/WindowItems/Window"
 import image  from "../../assets/profile.jpg"
 
 

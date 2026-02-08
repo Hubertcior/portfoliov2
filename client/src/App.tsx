@@ -1,9 +1,10 @@
 import './App.css'
 import { ApiStatus } from './components/organisms/ApiStatus'
 import { Bio } from './components/organisms/Bio'
-import { InteractiveApiConsole } from './components/organisms/InteractiveApiConsole'
 import { Profile } from './components/organisms/Profile'
 import { Resume } from './components/organisms/Resume'
+import { InteractiveApiConsole } from './components/organisms/InteractiveApiConsole'
+import { ProjectSection } from './components/organisms/ProjectSection'
 
 function App() {
   return (
@@ -19,7 +20,8 @@ function App() {
 
         <div className='flex flex-col gap-10 flex-1'>
           <Bio/>
-          <InteractiveApiConsole/>
+          <ProjectSection/>
+          <InteractiveApiConsole />
         </div>
 
       </div>
