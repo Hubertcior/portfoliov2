@@ -1,11 +1,10 @@
-import { BioInfo } from "../atoms/BioInfo";
 import { WindowTitle } from "../atoms/WindowTitle";
 
-export const BioSection = ({ title, value }: { title: string; value: string }) => {
+export const BioSection = ({ title }: { title: string }) => {
+
     return (
         <div>
             <WindowTitle title={title} />
-            <BioInfo value={value} />
         </div>
     )
 }

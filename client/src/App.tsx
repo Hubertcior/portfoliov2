@@ -4,7 +4,6 @@ import { Bio } from './components/organisms/Bio'
 import { InteractiveApiConsole } from './components/organisms/InteractiveApiConsole'
 import { Profile } from './components/organisms/Profile'
 import { Resume } from './components/organisms/Resume'
-import { SystemArchitecture } from './components/organisms/SystemArchitecture'
 
 function App() {
   return (

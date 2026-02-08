@@ -1,5 +1,5 @@
 export const LongArrow = () => (
-<div className="flex flex items-center">
+<div className="flex items-center">
     <svg 
       viewBox="0 0 100 20" 
       preserveAspectRatio="none" 
