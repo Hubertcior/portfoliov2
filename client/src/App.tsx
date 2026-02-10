@@ -5,6 +5,7 @@ import { Profile } from './components/organisms/Profile'
 import { Resume } from './components/organisms/Resume'
 import { InteractiveApiConsole } from './components/organisms/InteractiveApiConsole'
 import { ProjectSection } from './components/organisms/ProjectSection'
+import { TechStack } from './components/organisms/TechStack'
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <div className='flex flex-col gap-10 w-1/3'>
           <Profile/>
           <Resume/>
+          <TechStack/>
           <ApiStatus/>
         </div>
 
