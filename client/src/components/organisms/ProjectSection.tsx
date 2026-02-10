@@ -34,9 +34,9 @@ export const ProjectSection = () => {
         <Window title="PROJECTS">
             <Content>
                 <div className="flex flex-row gap-4">
-                    <ProjectCard title="PORTFOLIO WEBSITE" description="A personal portfolio website built with React and .Net, showcasing projects and skills with a modern design." imageSrc={proj1} imgAlt="Portfolio Website" techs={TECH_STACK_1} />
-                 <ProjectCard title="WORLD WAR II TIME LINE" description="A World War II timeline application built with React, providing historical insights and interactive features." imageSrc={proj2} imgAlt="World War II Time Line" techs={TECH_STACK_2} />
-                  <ProjectCard title="FOOTBALL EXPLORER" description="A football exploration application built with React and SupaBase, providing insights and interactive features." imageSrc={proj3} imgAlt="Football Explorer" techs={TECH_STACK_3} />
+                    <ProjectCard link="https://github.com/Hubertcior/portfoliov2" title="PORTFOLIO WEBSITE" description="A personal portfolio website built with React and .Net, showcasing projects and skills with a modern design." imageSrc={proj1} imgAlt="Portfolio Website" techs={TECH_STACK_1} />
+                 <ProjectCard link="https://github.com/Hubertcior/ww2-timeline" title="WORLD WAR II TIME LINE" description="A World War II timeline application built with React, providing historical insights and interactive features." imageSrc={proj2} imgAlt="World War II Time Line" techs={TECH_STACK_2} />
+                  <ProjectCard link="https://github.com/Hubertcior/footballcards" title="FOOTBALL EXPLORER" description="A football exploration application built with React and SupaBase, providing insights and interactive features." imageSrc={proj3} imgAlt="Football Explorer" techs={TECH_STACK_3} />
                 </div>
             </Content>
         </Window>
