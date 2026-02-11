@@ -1,5 +1,5 @@
 import type { TechItem } from "../../../types/TechItems";
-import { TechBadge } from "../../atoms/common/TechBadge";
+import { TechBadge } from "../../atoms/ProfileItems/common/TechBadge";
 import { TechBackground } from "../../atoms/ProjectItems/TechBackgroudn";
 
 export const TechStack = ({ techs }: { techs: TechItem[] }) => {

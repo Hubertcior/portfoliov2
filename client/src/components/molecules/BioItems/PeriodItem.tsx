@@ -1,5 +1,5 @@
 import { InfoBackground } from "../../atoms/BioItems/InfoBackground";
-import { GreenHeaderTitle } from "../../atoms/common/GreenHeaderTitle";
+import { GreenHeaderTitle } from "../../atoms/ProfileItems/common/GreenHeaderTitle";
 
 export const PeriodItem = ({ start, end, title, value }: { start: string; end: string; title: string; value: string }) => {
     return (
