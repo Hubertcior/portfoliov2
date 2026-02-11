@@ -1,5 +1,5 @@
 import type { TechItem } from "../../../types/TechItems";
-import { GreenHeaderTitle } from "../../atoms/common/GreenHeaderTitle";
+import { GreenHeaderTitle } from "../../atoms/ProfileItems/common/GreenHeaderTitle";
 import { ProjectCardBackground } from "../../atoms/ProjectItems/ProjectCardBackground";
 import { ProjectDescription } from "../../atoms/ProjectItems/ProjectDescription";
 import { ProjectImage } from "../../atoms/ProjectItems/ProjectImage";

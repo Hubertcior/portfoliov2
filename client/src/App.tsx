@@ -6,10 +6,13 @@ import { Resume } from './components/organisms/Resume'
 import { InteractiveApiConsole } from './components/organisms/InteractiveApiConsole'
 import { ProjectSection } from './components/organisms/ProjectSection'
 import { TechStack } from './components/organisms/TechStack'
+import MatrixBackground from './components/organisms/MatrixBackground'
 
 function App() {
   return (
     <div className='flex flex-col gap-12 p-10 min-h-screen text-white w-full'>
+
+      <MatrixBackground fontSize={16} color="#0F0" speed={60} />
       
       <div className='flex flex-row gap-12 items-start justify-center w-full'>
         

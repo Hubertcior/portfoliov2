@@ -1,8 +1,8 @@
 import { Window } from "../molecules/WindowItems/Window"
 import { Content } from "../molecules/WindowItems/Content"
 import { TECH_STACK } from "../../data/projects";
-import { TechBadge } from "../atoms/common/TechBadge";
-import { GreenHeaderTitle } from "../atoms/common/GreenHeaderTitle";
+import { TechBadge } from "../atoms/ProfileItems/common/TechBadge";
+import { GreenHeaderTitle } from "../atoms/ProfileItems/common/GreenHeaderTitle";
 
 
 export const TechStack = () => {
