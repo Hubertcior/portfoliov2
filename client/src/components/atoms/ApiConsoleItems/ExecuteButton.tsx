@@ -1,5 +1,7 @@
+import { MatrixButton } from "../common/MatrixButton";
+
 export const ExecuteButton = ({ onClick, label }: { onClick: () => void; label: string }) => {
   return (
-    <button onClick={onClick}>{label}</button>
+    <MatrixButton onClick={onClick} label={label} />
     );
 }
