@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import type { ApiEndpoint } from '../../../types/ApiEnpoint';
 import { AVAILABLE_ENDPOINTS } from '../../../types/ApiEnpoint';
+import { GreenHeaderTitle } from '../ProfileItems/common/GreenHeaderTitle';
 
 interface RequestSelectProps {
   onSelect: (endpoint: ApiEndpoint) => void;
@@ -23,7 +24,7 @@ export const RequestSelect = ({ onSelect }: RequestSelectProps) => {
       
       <button 
         onClick={toggleDropdown}
-        className="w-full flex items-center justify-between bg-white border border-gray-300 rounded p-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+        className="w-full flex items-center justify-between bg-gray-500/20 border border-green-500 rounded p-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
       >
         <div className="flex items-center gap-2">
           {selectedEndpoint ? (
@@ -31,27 +32,29 @@ export const RequestSelect = ({ onSelect }: RequestSelectProps) => {
               <span className="font-bold text-blue-600 bg-blue-100 px-2 py-0.5 rounded text-xs">
                 {selectedEndpoint.method}
               </span>
-              <span className="text-gray-700 truncate">{selectedEndpoint.url}</span>
+              <span className="text-green-700 truncate">{selectedEndpoint.url}</span>
             </>
           ) : (
-            <span>Select an endpoint</span>
+            <GreenHeaderTitle title={'Select an endpoint'}></GreenHeaderTitle>
           )}
         </div>
         <span className="text-gray-400">▼</span>
       </button>
 
       {isOpen && (
-        <ul className="absolute z-10 w-full mt-1 bg-white border border-gray-300 rounded shadow-lg max-h-60 overflow-auto">
+        <ul className="absolute z-10 w-full mt-1 bg-black/70 rounded shadow-lg max-h-60 overflow-auto border border-green-500 divide-y divide-gray-700">
           {AVAILABLE_ENDPOINTS.map((endpoint) => (
             <li 
               key={endpoint.id}
               onClick={() => handleSelect(endpoint)}
-              className="flex items-center gap-2 p-2 hover:bg-gray-100 cursor-pointer transition-colors"
+              className={`flex items-center gap-2 p-2 cursor-pointer transition-colors ${
+                endpoint.id === selectedEndpoint?.id ? 'bg-green-700/30 text-white' : 'hover:bg-gray-700/50 text-gray-200'
+              }`}
             >
               <span className="font-bold text-blue-600 bg-blue-100 px-2 py-0.5 rounded text-xs">
                 {endpoint.method}
               </span>
-              <span className="text-gray-700">{endpoint.url}</span>
+              <span className="text-green-300">{endpoint.url}</span>
             </li>
           ))}
         </ul>
