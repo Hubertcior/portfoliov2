@@ -14,7 +14,7 @@ function App() {
 
       <MatrixBackground fontSize={16} color="#0F0" speed={60} />
       
-      <div className='flex flex-row gap-12 items-start justify-center w-full'>
+      <div className='flex flex-col md:flex-row gap-12 items-start justify-center w-full'>
         
         <div className='flex flex-col gap-10 w-1/3'>
           <Profile/>

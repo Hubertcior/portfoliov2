@@ -21,7 +21,7 @@ export const TextInfo = ({ info, description, isLink, url }: TextInfoProps) => {
 
   return (
     <div className="flex space-x-2 mb-2 items-center">
-      <p>{info}:</p>
+      <p className="text-sm md:text-base">{info}:</p>
       
       {isLink && url ? (
         <div className="relative group flex items-center">
