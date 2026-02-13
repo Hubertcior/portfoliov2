@@ -11,7 +11,7 @@ export const InteractiveApiHeader = ({ onExecute }: InteractiveApiHeaderProps) =
     const [selectedEndpoint, setSelectedEndpoint] = useState<ApiEndpoint | null>(null);
 
     return (
-        <div className="p-4 border-b flex flex-row space-x-3 border-gray-300 font-bold text-lg">
+        <div className="p-4 border-b flex md:flex-row space-y-3 flex-col space-x-3 border-gray-300 font-bold text-lg">
             <RequestSelect onSelect={(endpoint) => setSelectedEndpoint(endpoint)} />
             <ExecuteButton onClick={() => {
                 if (selectedEndpoint) {

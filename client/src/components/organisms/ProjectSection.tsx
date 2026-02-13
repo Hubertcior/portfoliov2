@@ -7,7 +7,7 @@ export const ProjectSection = () => {
     return (
         <Window title="PROJECTS">
             <Content>
-                <div className="flex flex-row gap-4">
+                <div className="flex flex-col md:flex-row gap-4">
                    {PROJECTS.map((project) => (
                        <ProjectCard
                            key={project.id}

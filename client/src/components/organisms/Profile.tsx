@@ -9,10 +9,14 @@ export const Profile = () => {
     return (
         <Window title="USER_PROFILE">
             <Content>
-                <div className="flex justify-center w-full">
-                    <UserImage src={image} alt="User Profile" />
+                <div className="flex flex-col  items-center gap-4 overflow-hidden w-full">
+                    <div className="shrink-0">
+                        <UserImage src={image} alt="User Profile" />
+                    </div>
+                    <div className="grow w-full min-w-0">
+                        <UserInfo/>
+                    </div>
                 </div>
-                <UserInfo/>
             </Content>
         </Window>
     );
