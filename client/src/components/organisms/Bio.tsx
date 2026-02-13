@@ -9,7 +9,7 @@ export const Bio = () => {
     return(
         <Window title="BIO">
             <Content>
-                <div className="flex flex-row w-full gap-6">
+                <div className="flex md:flex-row flex-col w-full gap-6">
                     <div className="flex-1">
                         <BioSection title={"ABOUT_ME"} />
                         <BioDecoration>

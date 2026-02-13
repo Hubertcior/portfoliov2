@@ -20,29 +20,32 @@ export const RequestSelect = ({ onSelect }: RequestSelectProps) => {
   };
 
   return (
-    <div className="relative w-120">
+    <div className="relative w-full max-w-xl">
       
       <button 
         onClick={toggleDropdown}
-        className="w-full flex items-center justify-between bg-gray-500/20 border border-green-500 rounded p-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+        className="w-full flex items-center justify-between bg-gray-500/20 border border-green-500 rounded p-2 focus:outline-none focus:ring-2 focus:ring-blue-500 text-left"
       >
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-2 flex-1 min-w-0">
           {selectedEndpoint ? (
             <>
-              <span className="font-bold text-blue-600 bg-blue-100 px-2 py-0.5 rounded text-xs">
+              <span className="font-bold text-blue-600 bg-blue-100 px-2 py-0.5 rounded text-xs shrink-0">
                 {selectedEndpoint.method}
               </span>
-              <span className="text-green-700 truncate">{selectedEndpoint.url}</span>
+              
+              <span className="text-green-700 truncate w-full">
+                {selectedEndpoint.url}
+              </span>
             </>
           ) : (
-            <GreenHeaderTitle title={'Select an endpoint'}></GreenHeaderTitle>
+            <GreenHeaderTitle title={'Select an endpoint'} />
           )}
         </div>
-        <span className="text-gray-400">▼</span>
+        <span className="text-gray-400 shrink-0 ml-2">▼</span>
       </button>
 
       {isOpen && (
-        <ul className="absolute z-10 w-full mt-1 bg-black/70 rounded shadow-lg max-h-60 overflow-auto border border-green-500 divide-y divide-gray-700">
+        <ul className="absolute z-10 w-full mt-1 bg-black/90 rounded shadow-lg max-h-60 overflow-auto border border-green-500 divide-y divide-gray-700 backdrop-blur-sm">
           {AVAILABLE_ENDPOINTS.map((endpoint) => (
             <li 
               key={endpoint.id}
@@ -51,10 +54,12 @@ export const RequestSelect = ({ onSelect }: RequestSelectProps) => {
                 endpoint.id === selectedEndpoint?.id ? 'bg-green-700/30 text-white' : 'hover:bg-gray-700/50 text-gray-200'
               }`}
             >
-              <span className="font-bold text-blue-600 bg-blue-100 px-2 py-0.5 rounded text-xs">
+              <span className="font-bold text-blue-600 bg-blue-100 px-2 py-0.5 rounded text-xs shrink-0">
                 {endpoint.method}
               </span>
-              <span className="text-green-300">{endpoint.url}</span>
+              <span className="text-green-300 text-sm break-all">
+                {endpoint.url}
+              </span>
             </li>
           ))}
         </ul>
