@@ -3,9 +3,9 @@ import { SiTypescript, SiTailwindcss, SiSupabase, SiHtml5, SiCss3 } from "react-
 import { IoLogoJavascript } from "react-icons/io5";
 import { AiOutlineDotNet } from "react-icons/ai";
 import { TbBrandCSharp, TbSql } from "react-icons/tb";
-import proj1 from "../assets/proj1.png"
-import proj2 from "../assets/proj2.png"
-import proj3 from "../assets/proj3.gif"
+import proj1 from "../assets/proj1.mp4"
+import proj2 from "../assets/proj2.mp4"
+import proj3 from "../assets/proj3.mp4"
 
 export const PROJECTS = [
     {
@@ -13,8 +13,7 @@ export const PROJECTS = [
         title: "PORTFOLIO WEBSITE",
         link: "https://github.com/Hubertcior/portfoliov2",
         description: "A personal portfolio website built with React and .Net, showcasing projects and skills with a modern design.",
-        imageSrc: proj1,
-        imgAlt: "Portfolio Website",
+        videoSrc: proj1,
         techs: [
             { icon: FaReact, name: "React", color: "text-blue-500 border-blue-500/20" },
             { icon: SiTypescript, name: "TypeScript", color: "text-blue-600 border-blue-600/20" }, 
@@ -28,8 +27,7 @@ export const PROJECTS = [
         title: "WORLD WAR II TIME LINE",
         link: "https://github.com/Hubertcior/ww2-timeline",
         description: "A World War II timeline application built with React, providing historical insights and interactive features.",
-        imageSrc: proj2,
-        imgAlt: "World War II Time Line",
+        videoSrc: proj2,
         techs: [
             { icon: FaReact, name: "React", color: "text-blue-500 border-blue-500/20" },
             { icon: IoLogoJavascript, name: "JavaScript", color: "text-yellow-500 border-yellow-500/20" },
@@ -41,8 +39,7 @@ export const PROJECTS = [
         title: "FOOTBALL EXPLORER",
         link: "https://github.com/Hubertcior/footballcards",
         description: "A football exploration application built with React and SupaBase, providing insights and interactive features.",
-        imageSrc: proj3,
-        imgAlt: "Football Explorer",
+        videoSrc: proj3,
         techs: [
             { icon: FaReact, name: "React", color: "text-blue-500 border-blue-500/20" },
             { icon: IoLogoJavascript, name: "JavaScript", color: "text-yellow-500 border-yellow-500/20" },
