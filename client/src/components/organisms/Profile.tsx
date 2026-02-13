@@ -9,7 +9,7 @@ export const Profile = () => {
     return (
         <Window title="USER_PROFILE">
             <Content>
-                <div className="flex flex-col  items-center gap-4 overflow-hidden w-full">
+                <div className="flex flex-col  items-center gap-4 w-full">
                     <div className="shrink-0">
                         <UserImage src={image} alt="User Profile" />
                     </div>
