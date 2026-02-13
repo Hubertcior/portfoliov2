@@ -14,8 +14,7 @@ export const ProjectSection = () => {
                            link={project.link}
                            title={project.title}
                            description={project.description}
-                           imageSrc={project.imageSrc}
-                           imgAlt={project.imgAlt}
+                           videoSrc={project.videoSrc}
                            techs={project.techs}
                        />
                    ))}
