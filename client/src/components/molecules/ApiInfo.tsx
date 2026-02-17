@@ -3,7 +3,7 @@ import { useApiStatus } from "../../hooks/useApiStatus";
 import type { ApiStatusEndpoint } from "../../types/ApiEnpoint";
 
 export const ApiInfo = () => {
-    const { data, isLoading, error } = useApiStatus('https://localhost:7021/api/status');
+    const { data, isLoading, error } = useApiStatus("/api/status");
 
     const [frozenData, setFrozenData] = useState<ApiStatusEndpoint | null>(null);
 
