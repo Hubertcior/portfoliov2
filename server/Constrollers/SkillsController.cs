@@ -11,7 +11,7 @@ namespace Server.Constrollers
         public IActionResult GetBackendSkills()
         {
             var response = new SkillResponse(
-                Skills: new[] { "C#", ".NET 8", "Entity Framework Core", "SQL Server", "Docker", "Redis" }
+                Skills: new[] { "C#", ".NET 10", "Entity Framework Core", "SQL", "FluentValidation" }
             );
             return Ok(response);
         }
@@ -20,7 +20,7 @@ namespace Server.Constrollers
         public IActionResult GetFrontendSkills()
         {
             var response = new SkillResponse(
-                Skills: new[] { "React", "TypeScript", "Tailwind CSS", "Atomic Design", "Vite" }
+                Skills: new[] { "React", "JavaScript" ,"TypeScript", "Tailwind CSS", "Atomic Design" }
             );
             return Ok(response);
         }
