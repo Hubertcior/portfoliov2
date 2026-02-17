@@ -2,6 +2,7 @@ import { FaReact } from "react-icons/fa";
 import { SiTypescript, SiTailwindcss, SiSupabase, SiHtml5, SiCss3 } from "react-icons/si";
 import { IoLogoJavascript } from "react-icons/io5";
 import { AiOutlineDotNet } from "react-icons/ai";
+import { VscAzure } from "react-icons/vsc";
 import { TbBrandCSharp, TbSql } from "react-icons/tb";
 import proj1 from "../assets/proj1.mp4"
 import proj2 from "../assets/proj2.mp4"
@@ -20,6 +21,7 @@ export const PROJECTS = [
             { icon: SiTailwindcss, name: "Tailwind CSS", color: "text-teal-500 border-teal-500/20" },
             { icon: AiOutlineDotNet, name: ".Net", color: "text-gray-500 border-gray-500/20" },
             { icon: TbBrandCSharp, name: "C#", color: "text-purple-500 border-purple-500/20" },
+            { icon: VscAzure, name: "Azure", color: "text-blue-400 border-blue-400/20" },
         ]
     },
     {
@@ -60,4 +62,5 @@ export const TECH_STACK = [
     { icon: TbSql, name: "SQL", color: "text-orange-500 border-orange-500/20" },
     { icon: AiOutlineDotNet, name: ".Net", color: "text-gray-500 border-gray-500/20" },
     { icon: TbBrandCSharp, name: "C#", color: "text-purple-500 border-purple-500/20" },
+    { icon: VscAzure, name: "Azure", color: "text-blue-400 border-blue-400/20" },
 ]
