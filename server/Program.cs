@@ -6,8 +6,11 @@ builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowReactApp",
         policy => policy
-            .WithOrigins("http://localhost:5173")
-            .WithOrigins("https://www.hubertradziwinski.dev")
+            .WithOrigins("http://localhost:5173",
+                "https://hubertradziwinski.dev",
+                "https://www.hubertradziwinski.dev",
+                "https://portfoliov2-mmn2pynvf-huberts-projects-250f7746.vercel.app")
+            .SetIsOriginAllowed(origin => new Uri(origin).Host.EndsWith("vercel.app"))
             .AllowAnyMethod()
             .AllowAnyHeader());
 });
