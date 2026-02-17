@@ -1,5 +1,7 @@
 import { useState, useCallback } from 'react';
 
+const API_BASE_URL = import.meta.env.VITE_API_URL;
+
 interface ApiResponse<T = any> {
   data: T | null;
   isLoading: boolean;
@@ -26,7 +28,7 @@ export const useApiRequest = <T = any>(): ApiResponse<T> => {
         body: body ? JSON.stringify(body) : undefined,
       };
 
-      const response = await fetch(url, options);
+      const response = await fetch(`${API_BASE_URL}${url}`, options);
 
       if (!response.ok) {
         throw new Error(`Error: ${response.status} ${response.statusText}`);

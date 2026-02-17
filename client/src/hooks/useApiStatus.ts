@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react';
 import type { ApiStatusEndpoint } from '../types/ApiEnpoint';
 
+const API_BASE_URL = import.meta.env.VITE_API_URL;
+
 export const useApiStatus = (url: string) => {
   const [data, setData] = useState<ApiStatusEndpoint | null>(null);
   const [isLoading, setIsLoading] = useState<boolean>(true);
@@ -9,7 +11,7 @@ export const useApiStatus = (url: string) => {
   const checkStatus = async () => {
     setIsLoading(true);
     try {
-      const response = await fetch(url);
+      const response = await fetch(`${API_BASE_URL}${url}`);
       
       if (!response.ok) {
         throw new Error(`Server error: ${response.status}`);
