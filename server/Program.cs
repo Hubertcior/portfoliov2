@@ -6,7 +6,7 @@ builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowReactApp",
         policy => policy
-            .WithOrigins("https://www.hubertradziwinski.dev/",
+            .WithOrigins("https://www.hubertradziwinski.dev",
             "https://hubertradziwinski.dev",
             "http://localhost:5173")
             .AllowAnyMethod()
